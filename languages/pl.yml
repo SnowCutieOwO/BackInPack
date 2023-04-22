@@ -1,0 +1,82 @@
+#
+# CC Creative Commons 2022
+# Uznanie autorstwa - Bez utworów zależnych 4.0 Międzynarodowe
+# Autor olios
+#
+
+# Możesz używać kolorów w wiadomościach
+# https://minecraft.fandom.com/wiki/Formatting_codes
+
+# WAŻNE!
+# Każde zmiany w tym pliku wymagają przeładowania serwera lub jego restartu
+
+# Tłumaczenie: olios [autor pluginu]
+
+# Logi
+enable-plugin: "Plugin BackInPack został włączony"
+disable-plugin: "Plugin BackInPack został wyłączony"
+loaded-language-file: "Plik językowy ${languageCode}.yml został załadowany"
+language-file-not-found: "Nie znaleziono pliku językowego ${languageCode}.yml. Plik en.yml został załadowany"
+loading-multiple-backpacks: "Ładowanie plecaków graczy według grup (opcja włączona w configu)"
+loading-single-backpack: "Ładowanie plecaków graczy"
+reload-complete: "Pomyślnie przeładowano konfigurację pluginu BackInPack"
+database-not-connected: "Plugin nie jest połączony z bazą danych. Ta komenda nie może zostać wykonana"
+database-synchronized: "Zsynchronizowano dane z bazą danych"
+# Gracz
+player-death-delete: "&6Zginąłeś, Twój plecak został &cusunięty!"
+player-death-drop: "&6Zginąłeś, przedmioty z Twojego plecaka zostały &cwyrzucone!"
+player-backpack-change-size: "Wielkość Twojego plecaka &9została zmieniona&f, przedmioty które znajdowały się w niedostępnych miejscach &9zostały z niego wyrzucone"
+player-backpack-disable: "&cNie masz dostępu do swojego plecaka lub został on wyłączony"
+player-backpack-group-not-in-use: "&cWłączono system grup dla plecaków, lecz ten świat nie jest w żadnej grupie. Nie możesz skorzystać z plecaka"
+# Permisje
+no-permissions: "&cNie masz wystarczających permisji aby użyć tej komendy"
+console-command: "&cNie możesz użyć tej komendy z konsoli"
+command-is-disabled: "&cTa komenda jest wyłączona na tym serwerze"
+# Admin
+player-not-found: "&cNie znaleziono gracza &f&l${player}"
+player-not-found-or-offline: "&cGracz &f&l${player} &cnie został znaleziony lub jest offline"
+player-backpack-size: "Wielkość plecaka gracza &f&l${player} &rwynosi &a&l${size}"
+player-backpack-has-permission: "&9Ten gracz ma permisje &f${permission} &9która zmienia wielkość jego plecaka na &f${size}"
+player-backpack-userinfo-offline: "&9Ten gracz jest offline, jego permisje nie mogą zostać sprawdzone - wielkość widocznego plecaka wynosi &f54"
+player-backpack-userinfo-different-group: "&9Ten gracz jest online lecz znajduje się w innej grupie plecaków (&f${playerGroupName}&9), wielkość widocznego plecaka wynosi &f54"
+player-set-backpack-size: "&aWielkość plecaka gracza &f&l${player} &azostała ustawiona na &f${size}"
+player-set-all-backpack-size: "&aWilkość plecaka została ustawiona na &f${size} &adla wszystkich graczy (&f${amount}&a)"
+player-set-all-backpack-disable: "&aWyłączono plecak dla wszystkich wcześniej grających graczy (&f${amount}&a)"
+player-set-backpack-disable: "&aPlecak dla gracza &f&l${player} &azostał wyłączony"
+player-reload-complete: "&aPomyślnie przeładowano konfigurację pluginu BackInPack"
+player-database-not-connected: "&cPlugin nie jest połączony z bazą danych. Ta komenda nie może zostać wykonana"
+player-database-synchronized: "&aZsynchronizowano dane z bazą danych"
+player-backpack-add: "&aDodano plecak graczowi &f${player}"
+# Pomoc
+help:
+  - "&6[*] &fBackInPack Pomoc &6[*]"
+  - "&6Komendy:"
+  - "&abackinpack &6- &fpokazuje pomoc dla tego pluginu (to co teraz widzisz)"
+  - "&abackinpack reload &6- &fprzeładowuje konfiguracje pluginu BackInPack"
+  - "&abackinpack sync &6- &fsynchornizuje dane lokalne z bazą danych"
+  - "&abackpack [gracz] &6- &fotwiera okno plecaka"
+  - "&abackpack setsize [gracz/all] [liczba/default] &6- &fzmienia wielkość plecaka gracza"
+  - "&abackpack userinfo [gracz] &6- &finformacje o wielkości plecaka danego gracza"
+  - "&abackpack give [player] &6- &fdodaje plecak graczowi"
+  - "&fAministrator wpisując nick gracza po komendzie może zoabczyć plecak innego gracza"
+  - "&6Permisje:"
+  - "&abackinpack.* &6- &fwszystkie permisje dla pluginu BackInPack"
+  - "&abackinpack.userinfo &6- &fdostęp do komendy &abackpack userinfo"
+  - "&abackinpack.setsize &6- &fdostęp do komendy &abackpack setsize"
+  - "&abackinpack.give &6- &fdostęp do komendy &abackpack give"
+  - "&abackinpack.reload &6- &fdostęp do komendy &abackinpack reload"
+  - "&abackinpack.sync &6- &fdostęp do komendy &abackinpack sync"
+  - "&abackinpack.admin &6- &fotwieranie plecaków innych graczy"
+  - "&abackinpack.size.[liczba] &6- &fzmienia wielkość plecaka gracza"
+  - "&6Pomoc:"
+  - "&ahttps://www.spigotmc.org/threads/backinpack.559147/"
+  - ""
+  - "Dziękuję za skorzystanie z moich pluginów."
+  - "By olios"
+  - "&6[*] &f-------------- &6[*]"
+# Aktualizacje
+update: "Dostępna jest nowsza wersja pluginu BackInPack, możesz ją pobrać z tego linku &a${link}"
+# Argumenty
+argument-not-number: "&cArgument &f${args} &cnie jest liczbą"
+argument-invalid-number: "&cLiczba nie może być mniejsza niż 0 i większa niż 54"
+argument-missing: "&cNie podano wszystkich argumentów. UŻyj komendy w ten sposób: &f${command}"

@@ -1,0 +1,171 @@
+#
+# CC Creative Commons 2022
+# Attribution-NoDerivatives 4.0 International
+# Author olios
+#
+
+# //------------------------\\
+# |                          |
+# |   Plugin configuration   |
+# |                          |
+# \\------------------------//
+
+# IMPORTANT!
+# Any changes to this file require the server to be reloaded or restarted
+# Removing variables will cause the plugin to malfunction
+# You can download the original, unmodified files from plugin page
+# https://www.spigotmc.org/resources/authors/olios123.1116758/
+
+# You will get a notification when a newer plugin version is released
+check-updates: true
+
+# Plugin language
+# You can create your own .yml language files or edit existing ones
+language: en
+
+# The plugin logs will be displayed in green
+clearer-logs: false
+
+# Save all data from files to database (MySQL only)
+# Check file database.yml to change connection information
+database: false
+
+# //------------------------\\
+# |                          |
+# | BackInPack configuration |
+# |                          |
+# \\------------------------//
+
+# Standard backpack size
+# Minimum size 1 (a value of 0 turns off the backpack), maximum 54
+# WARNING: Changing this option to a smaller one will cause some items to be thrown from the backpack
+standard-backpack-size: 54 # default 54
+
+# Only players with this permission will be able to use the backpack
+# Enter the name of the permission or enter false to disable
+backpack-permission: false
+# backpack-permission: backinpack.gui
+
+# This setting determines what happens to the items after the player dies
+# Select one of the following values:
+# save - items are saved
+# delete - items are removed from the backpack
+# drop - items drop from the player
+player-dead: save # default save
+
+# Send information about lost/thrown items after death
+lost-items-message: true
+
+# Backpack texture
+#
+# Where to get textures?
+# Go to https://minecraft-heads.com/ and select a head
+# Scroll down to the "Other" section and copy the "value"
+# Paste the copied text here (don't worry, it will be quite long)
+# IMPORTANT! Changing this value requires a server restart - the texture of worn backpacks will not be changed
+backpack-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM1MWU1MDU5ODk4MzhlMjcyODdlN2FmYmM3Zjk3ZTc5NmNhYjVmMzU5OGE3NjE2MGMxMzFjOTQwZDBjNSJ9fX0="
+
+#      Crafting
+# +-----+-----+-----+
+# |  1  |  2  |  3  |
+# +-----+-----+-----+
+# |  4  |  5  |  6  |
+# +-----+-----+-----+
+# |  7  |  8  |  9  |
+# +-----+-----+-----+
+
+# The numbers represent the crafting field
+# Enter the Item ID here
+# Item ID list https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html#enum-constant-summary
+# Type "null" to set it to empty
+crafting:
+  1: LEATHER
+  2: LEATHER
+  3: LEATHER
+  4: LEATHER
+  5: CHEST
+  6: LEATHER
+  7: LEATHER
+  8: LEATHER
+  9: LEATHER
+
+# Backpack style
+# Here you can define the name of the backpack and its description
+# CHANGING THIS DATA WILL CAUSE PREVIOUS BACKPACKS TO STOP WORKING!
+backpack-style:
+  name: "&e&lBackpack"
+  title: "&e&lBackpack &f${player}" # Name visible in the backpack GUI | ${player} = username
+  lore:
+    - "&7(Right click to open)"
+
+# Item of the inaccessible space in the backpack
+# You can edit the appearance of this item
+backpack-inaccessible-place:
+  TITLE: "&c&lx"
+  MATERIAL: RED_STAINED_GLASS_PANE # if the plugin doesn't find the items it will use RED_STAINED_GLASS_PANE
+  LORE: [] # write from dashes on a new line
+
+# //------------------------\\
+# |                          |
+# |     Backpack groups      |
+# |                          |
+# \\------------------------//
+
+# Backpack groups allow you to access different backpacks on different worlds
+# IMPORTANT: Do not lead to a situation where one world belongs to more than ONE group
+# IMPORTANT: This can make the plugin work completely
+# IMPORTANT: If you enable this option, the file "inventories.yml" will not be used
+backpack-groups:
+  enable: false # default false
+  groups:
+    group1: # The group name can be anything you want, but cannot be repeated and must be different from "inventories"
+      - world # World name -> see server files
+      - world_the_end
+    group2:
+      - world_nether
+
+# Backpack size for groups
+# Enter the group name as defined above and enter the space after the colon
+# By enabling this option, you can also use the "backinpack.size.[number of slots].[group name]" permissions
+backpack-group-size:
+  enable: false # default false
+  groups:
+    group1: 54
+    group2: 9
+
+# //------------------------\\
+# |                          |
+# |         Commands         |
+# |                          |
+# \\------------------------//
+
+# Disable the backpack command
+# Enabling this option prevents the player from turning on the backpack with a command
+# The player will need to have a backpack as an item
+# false = command is enabled
+# true = command is disabled
+backpack-command-disable: false
+
+# //------------------------\\
+# |                          |
+# |   Administrator options  |
+# |                          |
+# \\------------------------//
+
+# Allow administrators to open other player's backpacks with the command /backpack [player]
+admin-open-player-backpack: true
+
+# Permission required to open another player's backpack
+admin-permission: backinpack.admin
+
+# //------------------------\\
+# |                          |
+# |          Effects         |
+# |                          |
+# \\------------------------//
+
+# When the player open the backpack he will hear a sound (Ender Chest Open)
+open-sound: true
+
+# When the player close the backpack he will hear a sound (Ender Chest Close)
+close-sound: true
