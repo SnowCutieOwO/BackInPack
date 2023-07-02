@@ -176,7 +176,7 @@ create-backpack:
 
 # Standard name for new backpacks.
 # The name will also be visible when crafting backpacks.
-default-backpack-name: "&e&lNew backpack"
+default-backpack-name: "New backpack"
 # *------------------------------------*
 
 
