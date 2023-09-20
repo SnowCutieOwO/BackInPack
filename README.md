@@ -5,7 +5,12 @@ The files are compatible with plugin the version: <code>2.1.1-BETA</code>
 
 ___
 
-# Links
-Plugin page: [BackInPack](https://www.spigotmc.org/resources/backinpack-portable-backpack-%E2%9C%A8-1-13-x-1-19-x.102384/)  
-Help: [SpigotMC Discussion](https://www.spigotmc.org/threads/backinpack-portable-backpack-%E2%9C%A8-1-13-x-1-19-x.559147/)  
-Donation: [Buy Me a Coffe]([https://www.paypal.me/oliosdonate](https://www.buymeacoffee.com/olios)https://www.buymeacoffee.com/olios)
+# Useful
+
+<p style="display: flex; justify-content: center;">
+<a href="https://www.spigotmc.org/resources/backinpack-portable-backpack.102384/"><img src="https://cdn.discordapp.com/attachments/1009784232601718825/1154026324755746836/DoscNew.png" /></a>
+  <a href="https://discord.gg/qQ4SUhn5SF"><img src="https://cdn.discordapp.com/attachments/1009784232601718825/1154026324516687982/DiscordNew.png" /></a>
+  <a href="https://paypal.me/oliosdonate?country.x=PL&locale.x=pl_PL"><img src="https://cdn.discordapp.com/attachments/1009784232601718825/1154026324298580028/PaypalNew.png" /></a>
+</p>
+
+
