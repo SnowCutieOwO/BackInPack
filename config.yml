@@ -181,42 +181,6 @@ default-backpack-name: "New backpack"
 
 
 # *------------------------------------*
-# :          ASSIGN BACKPACKS          :
-# *------------------------------------*
-# If you don't want crafting a backpack to add a new backpack.
-# You can use the option to assign created backpacks.
-# Backpacks can still be crafted, but it won't result in adding another backpack.
-
-# This option is enabled automatically if you checked "false" in line 172.
-
-# The player can assign an empty backpack to the correct backpack.
-# It's enough that after crafting he tries to open it and a menu with backpacks will be displayed.
-# Must select one of them and the backpack will be assigned to the backpack as an item.
-
-# The only way to get a new backpack will be to buy it or add it by the administration.
-
-# GUI will be shown when assigning a backpack.
-backpack-assigned-gui:
-  title: "&eAssigning a backpack"
-
-# *------------------------------------*
-
-
-# *------------------------------------*
-# :      BACKPACK TEXTURE (ITEM)       :
-# *------------------------------------*
-# Backpack texture.
-#
-# Where to get textures?
-# Go to https://minecraft-heads.com/ and select a head.
-# Scroll down to the "Other" section and copy the "value".
-# Paste the copied text here (don't worry, it will be quite long).
-# IMPORTANT! Changing this value requires a server restart - the texture of worn backpacks will not be changed.
-backpack-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM1MWU1MDU5ODk4MzhlMjcyODdlN2FmYmM3Zjk3ZTc5NmNhYjVmMzU5OGE3NjE2MGMxMzFjOTQwZDBjNSJ9fX0="
-# *------------------------------------*
-
-
-# *------------------------------------*
 # :         CRAFTING A BACKPACK        :
 # *------------------------------------*
 # The numbers represent the crafting field.
@@ -248,30 +212,6 @@ crafting:
 
 
 # *------------------------------------*
-# :           BACKPACKS MENU           :
-# *------------------------------------*
-# Here are the options for backpack list GUI.
-
-# Item responsible for the ability to buy a backpack.
-# You will be able to set the price and other selling options in the next section.
-
-# Head texture that will be displayed as an item through which you can purchase a backpack.
-buy-backpack-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjA1NmJjMTI0NGZjZmY5OTM0NGYxMmFiYTQyYWMyM2ZlZTZlZjZlMzM1MWQyN2QyNzNjMTU3MjUzMWYifX19"
-
-# Appearance of the item.
-buy-backpack-style:
-  TITLE: "&a&lPurchase of a backpack"
-  LORE:
-    - "&fBackpack size: &6%backinpack_config_backpack_buy_backpack_size% slots"
-    - "&fPrice: &6%backinpack_config_backpack_buy_cost%$"
-    # The true/false value will be replaced according to the language file in 184, 185 line of the file.
-    - "&fYou will receive as item: %backinpack_config_backpack_buy_give_as_item%"
-    - ""
-    - "&7(Click to buy a backpack)"
-# *------------------------------------*
-
-
-# *------------------------------------*
 # :         BUYING A BACKPACK          :
 # *------------------------------------*
 # Purchasing a backpack.
@@ -287,13 +227,32 @@ backpack-buy:
 
 
 # *------------------------------------*
+# :         REMOVING BACKPACKS         :
+# *------------------------------------*
+# Removing backpacks.
+# This option allows players to remove backpacks.
+# This only applies to the GUI because destroying a backpack as an item does not remove the items in that backpack.
+removing-backpacks:
+  # Enabling the option will cause an additional option to appear in the backpack GUI list.
+  enable: true
+  # Partial refund - enter the amount the player will receive after removing one backpack.
+  # If backpacks cannot be purchased because the option is disabled or the plugin is missing, the player will not receive anything.
+  # Players will NOT receive a refund if the backpack has been crafted.
+  refund: 100
+# *------------------------------------*
+
+
+# *------------------------------------*
 # :    BACKPACK APPEARANCE (OBJECT)    :
 # *------------------------------------*
 # Backpack style.
 # Here you can define the name of the backpack and its description.
 backpack-style:
   # The material will always be a head with a backpack texture.
-  TITLE: "&e&l%backinpack_backpack_name%" # Name visible in the backpack GUI and backpacks list GUI.
+  NAME: "&e&l%backinpack_backpack_name%" # Name visible in the backpack GUI and backpacks list GUI.
+  MATERIAL: PLAYER_HEAD
+  TEXTURE: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM1MWU1MDU5ODk4MzhlMjcyODdlN2FmYmM3Zjk3ZTc5NmNhYjVmMzU5OGE3NjE2MGMxMzFjOTQwZDBjNSJ9fX0="
+  CUSTOM_MODEL_DATA: 1333
   LORE:
     - "&fSize: &6%backinpack_backpack_size%"
     - "&fItems: &6%backinpack_backpack_items_count% items"
@@ -305,7 +264,7 @@ backpack-style:
 # The appearance of the backpack that will be visible when the backpack needs to be assigned.
 # For more information about this section, see line 186.
 backpack-style-to-assignment:
-  TITLE: "&7&lUnassigned backpack"
+  NAME: "&7&lUnassigned backpack"
   MATERIAL: LEATHER
   LORE:
     - "&fClick to assign a backpack"
@@ -315,7 +274,7 @@ backpack-style-to-assignment:
 # Item of the inaccessible space in the backpack.
 # You can edit the appearance of this item.
 backpack-inaccessible-place:
-  TITLE: "&c&lx"
+  NAME: "&c&lx"
   MATERIAL: RED_STAINED_GLASS_PANE # if the plugin doesn't find the material, it will use RED_STAINED_GLASS_PANE
   LORE: [] # write from dashes on a new line
 # *------------------------------------*
@@ -390,9 +349,28 @@ admin-open-player-backpack: true
 # *------------------------------------*
 # :               SOUNDS               :
 # *------------------------------------*
-# When the player open the backpack, he will hear a sound (Ender Chest Open).
-open-sound: true
+# When the player open the backpack.
+open-sound:
+  enable: true
+  sound: BLOCK_ENDER_CHEST_OPEN
 
-# When the player close the backpack, he will hear a sound (Ender Chest Close).
-close-sound: true
+# When the player closes the backpack.
+close-sound:
+  enable: true
+  sound: BLOCK_ENDER_CHEST_CLOSE
+
+# When a player buys a backpack.
+buy-backpack-sound:
+  enable: true
+  sound: ENTITY_VILLAGER_YES
+
+# When a player tries to buy a backpack but doesn't have enough money.
+no-enough-money-sound:
+  enable: true
+  sound: ENTITY_VILLAGER_NO
+
+# When the player removes the backpack.
+remove-backpack-sound:
+  enable: true
+  sound: ENTITY_GENERIC_EXPLODE
 # *------------------------------------*
