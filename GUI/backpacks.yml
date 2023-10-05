@@ -1,0 +1,41 @@
+# This GUI is visible when you type /b or /backpack.
+# Here you can find a list of backpacks, the possibility of buying and removing them.
+gui:
+  # The name of the selection GUI
+  title: "&e%backinpack_player_username%"
+
+  items:
+    # Backpack - backpack items will be created based on this
+    # The backpack item will also be used when assigning it to an unassigned backpack
+    backpack:
+      NAME: "&e%backinpack_backpack_name%"
+      MATERIAL: PLAYER_HEAD
+      TEXTURE: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM1MWU1MDU5ODk4MzhlMjcyODdlN2FmYmM3Zjk3ZTc5NmNhYjVmMzU5OGE3NjE2MGMxMzFjOTQwZDBjNSJ9fX0="
+      CUSTOM_MODEL_DATA: 1333
+      LORE:
+        - "&fSize: &6%backinpack_backpack_size%"
+        - "&fItems: &6%backinpack_backpack_items_count% items"
+        - ""
+        - "&7(Click to open)"
+        - "&7(RMB Click to change name)"
+
+
+    # Buy backpack
+    buyBackpack:
+      NAME: "&a&lPurchase of a backpack"
+      MATERIAL: PLAYER_HEAD
+      TEXTURE: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjA1NmJjMTI0NGZjZmY5OTM0NGYxMmFiYTQyYWMyM2ZlZTZlZjZlMzM1MWQyN2QyNzNjMTU3MjUzMWYifX19"
+      LORE:
+        - "&fBackpack size: &6%backinpack_config_backpack_buy_backpack_size% slots"
+        - "&fPrice: &6%backinpack_config_backpack_buy_cost%$"
+        # The true/false value will be replaced according to the language file in 184, 185 line of the file.
+        - "&fYou will receive as item: %backinpack_config_backpack_buy_give_as_item%"
+        - ""
+        - "&7(Click to buy a backpack)"
+
+
+    # Select the backpack to remove
+    removeBackpack:
+      NAME: "&c&lRemove the backpack"
+      MATERIAL: TNT
+      LORE: []
