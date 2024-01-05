@@ -39,6 +39,7 @@ loaded-language-file: "Đã tải tệp ngôn ngữ %backinpack_config_language%
 language-file-not-found: "Không tìm thấy tệp ngôn ngữ %backinpack_config_language%.yml. Đã được tải tệp vi.yml - ddangle2611"
 loading-single-backpack: "Đang tải ba lô của người chơi"
 reload-complete: "Đã tải lại cấu hình plugin BackInPack thành công"
+missing-backpacks: "Không tìm thấy tệp ba lô trong thư mục /backpacks"
 # ___________________________________________________________________________
 
 
@@ -198,4 +199,14 @@ command-disabled: "&cLệnh này đã bị vô hiệu hóa trên máy chủ này
 # Values
 true: "&aCó"
 false: "&cKhông"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Cờ (mô tả cờ không thể là danh sách)
+flag-none: "&7Không có cờ"
+flag-items-drop: "   &c- Với đồ chết sẽ rơi ra"
+flag-backpack-delete: "   &c- Với cái chết bạn mất ba lô"
+# Tích cực
+flag-items-save: "   &a+ Sau khi chết, vật phẩm được cất giữ"
 # ___________________________________________________________________________
