@@ -1,7 +1,7 @@
 # BackInPack Files
 The files in this repository are for the [BackInPack](https://www.spigotmc.org/resources/backinpack-portable-backpack-%E2%9C%A8-1-13-x-1-19-x.102384/) plugin.
 
-The files are compatible with plugin the version: <code>2.0</code>
+The files are compatible with plugin the version: <code>3.0-BETA</code>
 
 ___
 
