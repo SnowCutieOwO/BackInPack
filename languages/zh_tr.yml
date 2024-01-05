@@ -39,6 +39,7 @@ loaded-language-file: "已載入 %backinpack_config_language%.yml 語言檔案"
 language-file-not-found: "找不到語言檔案 %backinpack_config_language%.yml。已載入 en.yml 檔案"
 loading-single-backpack: "正在載入玩家的背包"
 reload-complete: "成功重新載入 BackInPack 插件的設定"
+missing-backpacks: "/backpacks 資料夾中找不到背包文件"
 # ___________________________________________________________________________
 
 
@@ -198,4 +199,14 @@ command-disabled: "&c該命令在此服務器上被禁用！"
 # 價值觀
 true: "&a是"
 false: "&c否"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# 標誌（標誌描述不能是列表）
+flag-none: "&7無旗幟"
+flag-items-drop: "   &c- 死亡後物品會掉落"
+flag-backpack-delete: "   &c- 死亡後你會失去背包"
+# 積極的
+flag-items-save: "   &a+ 死亡後物品會儲存"
 # ___________________________________________________________________________
