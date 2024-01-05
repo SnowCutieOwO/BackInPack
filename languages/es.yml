@@ -39,6 +39,7 @@ loaded-language-file: "Se ha cargado el archivo de idioma %backinpack_config_lan
 language-file-not-found: "No se encontró el archivo de idioma %backinpack_config_language%. Se ha cargado el archivo en.yml"
 loading-single-backpack: "Cargando las mochilas de los jugadores"
 reload-complete: "Configuración del complemento BackInPack recargada exitosamente"
+missing-backpacks: "No se encontró ningún archivo de mochilas en la carpeta /backpacks"
 # ___________________________________________________________________________
 
 
@@ -198,4 +199,14 @@ command-disabled: "&c¡Este comando está deshabilitado en este servidor!"
 # Valores
 true: "&aSí"
 false: "&cNo"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Flags (flag descriptions cannot be a list)
+flag-none: "&7Sin banderas"
+flag-items-drop: "   &c- Con la muerte los objetos se caerán."
+flag-backpack-delete: "   &c- Con la muerte se pierde la mochila"
+# Positive
+flag-items-save: "   &a+ Después de la muerte, los artículos se almacenan."
 # ___________________________________________________________________________
