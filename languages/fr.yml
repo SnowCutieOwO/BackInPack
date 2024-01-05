@@ -39,6 +39,7 @@ loaded-language-file: "Le fichier de langue %backinpack_config_language%.yml a �
 language-file-not-found: "Le fichier de langue %backinpack_config_language%.yml n'a pas été trouvé. Le fichier en.yml a été chargé"
 loading-single-backpack: "Chargement des sacs à dos des joueurs"
 reload-complete: "La configuration du plugin BackInPack a été rechargée avec succès"
+missing-backpacks: "Aucun fichier de sacs à dos trouvé dans le dossier /backpacks"
 # ___________________________________________________________________________
 
 
@@ -198,4 +199,14 @@ command-disabled: "&cCette commande est désactivée sur ce serveur!"
 # Valeurs
 true: "&aOui"
 false: "&cNon"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Indicateurs (les descriptions des indicateurs ne peuvent pas être une liste)
+flag-none: "&7Pas de drapeaux"
+flag-items-drop: "   &c- Avec la mort, les objets tomberont"
+flag-backpack-delete: "   &c- Avec la mort tu perds ton sac à dos"
+# Positive
+flag-items-save: "   &a+ Après le décès, les objets sont stockés"
 # ___________________________________________________________________________
