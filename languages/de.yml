@@ -39,6 +39,7 @@ loaded-language-file: "Die Sprachdatei %backinpack_config_language%.yml wurde ge
 language-file-not-found: "Sprachdatei %backinpack_config_language%.yml nicht gefunden. Die Datei en.yml wurde geladen"
 loading-single-backpack: "Lade die Rucksäcke der Spieler"
 reload-complete: "Die Konfiguration des BackInPack Plugins wurde erfolgreich neu geladen"
+missing-backpacks: "Im Ordner /backpacks wurde keine Backpacks-Datei gefunden"
 # ___________________________________________________________________________
 
 
@@ -198,4 +199,14 @@ command-disabled: "&cDieser Befehl ist auf diesem Server deaktiviert!"
 # Werte
 true: "&aJa"
 false: "&cNein"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Flags (Flag-Beschreibungen können keine Liste sein)
+flag-none: "&7Keine Flaggen"
+flag-items-drop: "   &c- Mit dem Tod fallen Gegenstände heraus"
+flag-backpack-delete: "   &c- Mit dem Tod verlierst du den Rucksack"
+# Positiv
+flag-items-save: "   &a+ Nach dem Tod werden Gegenstände aufbewahrt"
 # ___________________________________________________________________________
