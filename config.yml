@@ -115,6 +115,14 @@ max-backpacks: 36
 # If the player enters the server for the first time, he will receive a backpack.
 default-backpack: default
 # Enter "none" or "null" so that the player does not receive any backpack after entering the server
+
+# The backpack can be added to the player immediately as an item
+default-backpack-give-as-item:
+  enable: false
+  # The slot to which the backpack will be added.
+  # If this slot is occupied or incorrect values are entered, the backpack will be added to the first free slot - if it exists.
+  # Slot numbering - https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b2/Items_slot_number.png/revision/latest?cb=20170708121246
+  slot: 0
 # *------------------------------------*
 
 
@@ -172,6 +180,15 @@ default-backpack-name: "New backpack"
 
 # Specify here what backpack will be created after changing an unassigned backpack to create a new one.
 created-backpack: default
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :      PLAYERS OPENING BACKPACKS     :
+# *------------------------------------*
+# This option determines whether other players (than the owner) will be able to open the backpack using the item.
+# To make using this option pointless, it is recommended that backpacks can only be accessed using an item.
+other-players-open-backpack: false
 # *------------------------------------*
 
 
